@@ -9,7 +9,7 @@ const Notification = ({ variant, message, show, handleClose }) => {
                 <Toast
                     className="d-inline-block m-1 text-light"
                     bg={variant}
-                    show={true} 
+                    show={show} 
                     delay={3000}
                     onClose={handleClose}  
                     autohide
