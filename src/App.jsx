@@ -15,7 +15,7 @@ function App() {
 
   const submit = data => {
     setIsLoading(true);
-    axios.post('/email/contact', data)
+    axios.post('/emails/contact', data)
       .then(() => setNotification({show: true, variant: "success", message: "Message sent!"}))
       .catch(() => setNotification({show: true, variant: "danger", message: "There was an error"}))    
       .finally(() => setIsLoading(false));
